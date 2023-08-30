@@ -5,7 +5,7 @@ import express, { Request, Response } from "express";
 import * as ItemService from "./items.service";
 import { BaseItem, Item } from "./item.interface";
 
-import { checkJwt } from "../middleware/authz.middleware";
+// import { checkJwt } from "../middleware/authz.middleware";
 
 
 /**
@@ -53,7 +53,7 @@ itemsRouter.get("/:id", async (req: Request, res: Response) => {
 // POST items
 
 
-itemsRouter.use(checkJwt); // 👈 👀
+// itemsRouter.use(checkJwt); // 👈 👀
 
 
 itemsRouter.post("/", async (req: Request, res: Response) => {
