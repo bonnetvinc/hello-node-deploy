@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
-app.use("/apis", itemsRouter);
+// app.use("/apis", itemsRouter);
 // app.use(errorHandler);
 // app.use(notFoundHandler);
 /**
